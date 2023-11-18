@@ -7,7 +7,6 @@ package frc.robot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.Timer;
-import edu.wpi.first.wpilibj.motorcontrol.PWMSparkMax;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
@@ -58,6 +57,12 @@ public class Robot extends TimedRobot {
       leftMotor2.set(0);
       rightMotor1.set(-.5);
       rightMotor2.set(-.5);
+    }
+    else { 
+      leftMotor1.set(0);
+      leftMotor2.set(0);
+      rightMotor1.set(0);
+      rightMotor2.set(0);
     }
 
   }
